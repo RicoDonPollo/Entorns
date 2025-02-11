@@ -1,0 +1,26 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class RA5_1_1_lectura {
+    public static void main(String[] args){
+
+        try{
+            File arxiu = new File("Activitat1");
+            Scanner lectura = new Scanner(arxiu);
+            while (lectura.hasNextLine()) {
+                System.out.println(lectura.nextLine());
+                
+            }
+            
+            lectura.close();
+            
+            System.out.println("Lectura realitzada");
+        }
+        catch (IOException e){
+            System.out.println("Exepció: " + e.toString());
+        }
+    }
+}
+
+
