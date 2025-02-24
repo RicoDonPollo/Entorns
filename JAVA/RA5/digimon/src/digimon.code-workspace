@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../RA6"
+		},
+		{
+			"path": "../../../../../../../Desktop/AS_DAM/JAVA_SCRIPT"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		],
+		"liveServer.settings.multiRootWorkspaceName": "JAVA_SCRIPT"
+	}
+}
