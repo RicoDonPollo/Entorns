@@ -46,7 +46,7 @@ public class Main {
 
         }
 
-        for(Tasca temp: baixaPrioritat){
+        for(Tasca temp: baixaPrioritat){    
             System.out.println("Fem la tasca \"" + temp.getDescripcio() + "\".");
 
         }
