@@ -1,14 +1,14 @@
 public class Ipad {
 
-    private String num_serie;
+    private int num_serie;
     private boolean carcassa;
     private boolean circuits_integrat;
     private boolean pantalla;
     private boolean embalatges_individuals;
     private boolean defectuos;
 
-    public Ipad(String num_serie){
-        this.num_serie=num_serie;
+    public Ipad(){
+        this.num_serie=num_serie++;
         this.carcassa=false;
         this.circuits_integrat=false;
         this.pantalla=false;
@@ -17,11 +17,11 @@ public class Ipad {
 
     }
 
-    public String getNum_serie() {
+    public int getNum_serie() {
         return num_serie;
     }
 
-    public void setNum_serie(String num_serie) {
+    public void setNum_serie(int num_serie) {
         this.num_serie = num_serie;
     }
 

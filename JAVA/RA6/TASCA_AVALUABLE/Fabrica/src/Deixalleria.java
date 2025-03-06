@@ -34,4 +34,24 @@ public class Deixalleria {
         }
         return llista;
     }
+
+    // public Ipad agafa(int i){
+    //     return Ipad;
+    // }
+
+    // public int tamany(){
+    //     return 5;
+    // }
+
+    // public int busca(Ipad ip){
+    //     return 5;
+    // }
+
+    // public boolean inserta(int i, Ipad ip){
+    //     return false;
+    // }
+
+    // public void elimina(int i){
+        
+    // }
 }
