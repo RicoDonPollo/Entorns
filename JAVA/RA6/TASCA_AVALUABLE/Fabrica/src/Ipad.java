@@ -1,6 +1,8 @@
 public class Ipad {
 
-    private int num_serie;
+    private static int num_serie=0;
+    private int num_serie_instancia;
+
     private boolean carcassa;
     private boolean circuits_integrat;
     private boolean pantalla;
@@ -8,8 +10,8 @@ public class Ipad {
     private boolean defectuos;
 
     public Ipad(){
-        this.num_serie=num_serie++;
-        this.carcassa=false;
+        this.num_serie_instancia = ++num_serie;
+        this.carcassa=true;
         this.circuits_integrat=false;
         this.pantalla=false;
         this.embalatges_individuals=false;
@@ -18,7 +20,7 @@ public class Ipad {
     }
 
     public int getNum_serie() {
-        return num_serie;
+        return num_serie_instancia;
     }
 
     public void setNum_serie(int num_serie) {
@@ -67,13 +69,11 @@ public class Ipad {
 
     @Override
     public String toString() {
-        return "Ipad [num_serie=" + num_serie + ", carcassa=" + carcassa + ", circuits_integrat=" + circuits_integrat
-                + ", pantalla=" + pantalla + ", embalatges_individuals=" + embalatges_individuals + ", defectuos="
-                + defectuos + "]";
+        return "Ipad " + num_serie_instancia + "\n" 
+        + "\tcircuits_integrat=" + circuits_integrat + "\n"
+        + "\tpantalla=" + pantalla + "\n"
+        + "\tembalatges_individuals=" + embalatges_individuals + "\n"
+        + "\tdefectuos=" + defectuos + "\n";
     }
 
-
-
-    
-    
 }
